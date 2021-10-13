@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discrete JavaScript</title>
+<!--  TODO: make the purple circle appear above the h1 background-->
+<!--  TODO: develop 3 colors variant for the circle. Default color is Black -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      padding: 10%;
+    }
+
+    .circle {
+      --length: 1rem;
+
+      background-color: rebeccapurple;
+      border-radius: 100vw;
+      display: inline-block;
+      height: var(--length);
+      margin: 3rem;
+      width: var(--length);
+    }
+
+    header {
+      position: absolute;
+    }
+
+    h1 {
+      padding: 3rem;
+      background-color: aqua;
+      opacity: 50%;
+    }
+  </style>
+</head>
+<body>
+<div class="root">
+  <header>
+    <h1>Discrete JavaScript</h1>
+  </header>
+  <div class="circle"></div>
+  <ul>
+    <li>Purple: <div class="circle"></div></li>
+    <li>Orange: <div class="circle"></div></li>
+    <li>Black: <div class="circle"></div></li>
+  </ul>
+</div>
+</body>
+</html>
